@@ -1,0 +1,24 @@
+.col{
+    display: flex;
+    justify-self: center;
+    background-color: aqua;
+}
+
+.row{
+    border: 4px rgb(199, 0, 0) solid;
+    height: max-content;
+}
+.row *:nth-child(even){
+    background: bisque;
+    text-align: center;
+}
+.row *:nth-child(odd) {
+    background: #e6bb3b;
+    text-align: center;
+}
+.row *{
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    height: fit-content;
+}

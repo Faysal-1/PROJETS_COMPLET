@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fayssal Rajouani - Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="./image/Faysal-1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <!-- Animation d'intro homme qui réfléchit -->
+    <div id="intro-animation" style="position:fixed;z-index:2000;top:0;left:0;width:100vw;height:100vh;background:#fff;display:flex;align-items:center;justify-content:center;">
+      <lottie-player
+        src="https://assets7.lottiefiles.com/packages/lf20_x62chJ.json"
+        background="transparent"
+        speed="1"
+        style="width: 280px; height: 280px;"
+        loop
+        autoplay>
+      </lottie-player>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="gradient-text">Fayssal Rajouani</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link gradient-text" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link gradient-text" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link gradient-text" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link gradient-text" href="#portfolio">projects</a></li>
+                    <li class="nav-item"><a class="nav-link gradient-text" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="d-flex justify-content-center align-items-center text-center animate-fade-in">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="display-4 mb-3">I'm <span class="gradient-text">Fayssal Rajouani</span></h1>
+            <h3 class="mb-4 gradient-text">Full-Stack Web Developer</h3>
+            <p class="lead mb-4">Crafting modern and user-friendly websites</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Hire Me</a>
+        </div>
+    </div>
+    </section>
+
+    <section id="about" class="py-5 animate-slide-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="./image/Faysal-1.png" class="img-fluid rounded-circle shadow" alt="Fayssal Rajouani">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="mb-4 gradient-text">About Me</h2>
+                    <div class="about-intro mb-4">
+                        <i class="fas fa-user-tie pro-icon"></i>
+                        <p class="about-message mb-0">
+                            As a software developer specializing in web technologies, I bring a results-driven mindset and a passion for crafting clean, maintainable, and high-performance code. With hands-on experience in building scalable web applications, I focus on delivering solutions that are not only functional but also user-centered.<br>
+                            <strong>I thrive in collaborative environments, value attention to detail, and stay constantly updated with modern development practices.</strong>
+                        </p>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li><strong>Name:</strong> Fayssal Rajouani</li>
+                        <li><strong>Email:</strong> <a href="mailto:fayssalrajouani@gmail.com">fayssalrajouani@gmail.com</a></li>
+                        <li><strong>Location:</strong> Morocco</li>
+                    </ul>
+                    <a href="CV.pdf" class="btn btn-outline-dark">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="skills" class="bg-light py-5 animate-slide-up">
+            <div class="container text-center">
+                <h2 class="mb-5 gradient-text">My Skills</h2>
+                <div class="row">
+                    <!-- Skills Icons -->
+                    <div class="col-md-3 mb-4"><i class="fa-brands fa-html5 fa-3x mb-3 text-danger"></i><h4>HTML</h4></div>
+                    <div class="col-md-3 mb-4"><i class="fa-brands fa-css3-alt fa-3x mb-3 text-primary"></i><h4>CSS</h4></div>
+                    <div class="col-md-3 mb-4"><i class="fa-brands fa-js-square fa-3x mb-3 text-warning"></i><h4>JavaScript</h4></div>
+                    <div class="col-md-3 mb-4"><i class="fa-solid fa-code fa-3x mb-3 text-primary"></i><h4>C</h4></div>
+                    <div class="col-md-3 mb-4"><i class="fa-solid fa-brain fa-3x mb-3 text-info"></i><h4>Algorithms</h4></div>
+                    <div class="col-md-3 mb-4"><i class="fa-brands fa-bootstrap fa-3x mb-3 text-info"></i><h4>Bootstrap</h4></div>
+                    <div class="col-md-3 mb-4"><i class="fa-brands fa-java fa-3x mb-3 text-warning"></i><h4>Java</h4></div>
+                    <div class="col-md-3 mb-4"><i class="fa-brands fa-js-square fa-3x mb-3 text-info"></i><h4>TypeScript</h4></div>
+                    <div class="col-md-3 mb-4"><i class="fa-solid fa-diagram-project fa-3x mb-3 text-secondary"></i><h4>UML</h4></div>
+                    <div class="col-md-3 mb-4"><i class="fa-solid fa-database fa-3x mb-3 text-primary"></i><h4>MySQL</h4></div>
+                    <div class="col-md-3 mb-4"><i class="fa-brands fa-react fa-3x mb-3 text-primary"></i><h4>React</h4></div>
+                    <div class="col-md-3 mb-4"><i class="fa-brands fa-php fa-3x mb-3 text-primary"></i><h4>PHP</h4></div>
+                    <div class="col-md-3 mb-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" style="width:48px; height:48px; margin-bottom:12px;"><h4>Spring Boot</h4></div>
+                    <div class="col-md-3 mb-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width:48px; height:48px; margin-bottom:12px;"><h4>Python</h4></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="resume" class="py-5 animate-slide-up">
+            <div class="container">
+                <h2 class="text-center mb-4 gradient-text" style="font-weight:700;">Take A Look At <span style="color:#007bff;text-decoration:underline;text-decoration-thickness:4px;">My Career</span></h2>
+                <div class="timeline-vertical mx-auto" style="max-width:600px;position:relative;">
+                    <!-- Timeline line -->
+                    <div style="position:absolute;left:32px;top:0;bottom:0;width:4px;background:#28304a;border-radius:2px;z-index:0;"></div>
+                    <!-- Timeline items -->
+                    <div class="timeline-item mb-5" style="position:relative;z-index:1;">
+                        <div style="position:absolute;left:24px;top:6px;width:16px;height:16px;background:#3a466e;border-radius:50%;border:3px solid #1a2238;"></div>
+                        <div style="margin-left:56px;">
+                            <span style="color:#1a2238;font-size:1rem;font-weight:600;">2021</span>
+                            <span style="font-weight:700;font-size:1.15rem;margin-left:12px;color:#28304a;">Baccalaureate</span><br>
+                            <small style="color:#3a466e;">Lycée Imam Châtibi (Ghafsai)</small>
+                        </div>
+                    </div>
+                    <div class="timeline-item mb-5" style="position:relative;z-index:1;">
+                        <div style="position:absolute;left:24px;top:6px;width:16px;height:16px;background:#3a466e;border-radius:50%;border:3px solid #1a2238;"></div>
+                        <div style="margin-left:56px;">
+                            <span style="color:#1a2238;font-size:1rem;font-weight:600;">2024</span>
+                            <span style="font-weight:700;font-size:1.15rem;margin-left:12px;color:#28304a;">deug smi</span><br>
+                            <small style="color:#3a466e;">University Dhar Mhraz</small>
+                        </div>
+                    </div>
+                    <div class="timeline-item mb-5" style="position:relative;z-index:1;">
+                        <div style="position:absolute;left:24px;top:6px;width:16px;height:16px;background:#3a466e;border-radius:50%;border:3px solid #1a2238;"></div>
+                        <div style="margin-left:56px;">
+                            <span style="color:#1a2238;font-size:1rem;font-weight:600;">2025</span>
+                            <span style="font-weight:700;font-size:1.15rem;margin-left:12px;color:#28304a;">Licence smi</span><br>
+                            <small style="color:#3a466e;">University Dhar Mhraz</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="portfolio" class="py-5 animate-slide-up">
+            <div class="container text-center">
+                <h2 class="mb-5 gradient-text">projects</h2>
+                <div class="row">
+                    <!-- Portfolio Item 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card portfolio-card h-100" data-bs-toggle="modal" data-bs-target="#modalEcommerce">
+                            <img src="./image/Ecommerce-site.jpg" class="card-img-top img-fluid rounded" alt="Capture d'écran du site Ecommerce">
+                            <div class="card-body">
+                                <h5 class="card-title">Ecommerce Site</h5>
+                                <div class="mb-2">
+                                    <span class="badge bg-primary">React</span>
+                                    <span class="badge bg-warning text-dark">JavaScript</span>
+                                    <span class="badge bg-info text-dark">Bootstrap</span>
+                                    <span class="badge bg-secondary">MySQL</span>
+                                </div>
+                                <div class="mb-2"><i class="fa-regular fa-clock me-1"></i>Durée : 2 mois</div>
+                                <button class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalEcommerce">Voir détails</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card portfolio-card h-100" data-bs-toggle="modal" data-bs-target="#modalPerso">
+                            <img src="./image/Untitled.jpg" class="card-img-top img-fluid rounded" alt="Aperçu du site personnel">
+                            <div class="card-body">
+                                <h5 class="card-title">Web site Personnel</h5>
+                                <div class="mb-2">
+                                    <span class="badge bg-primary">HTML</span>
+                                    <span class="badge bg-info text-dark">CSS</span>
+                                    <span class="badge bg-warning text-dark">JavaScript</span>
+                                    <span class="badge bg-success">Spring Boot</span>
+                                </div>
+                                <div class="mb-2"><i class="fa-regular fa-clock me-1"></i>Durée : 2 mois</div>
+                                <button class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalPerso">Voir détails</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ajouter d'autres projets ici -->
+                </div>
+            </div>
+            <!-- Modals Portfolio -->
+            <div class="modal fade" id="modalEcommerce" tabindex="-1" aria-labelledby="modalEcommerceLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEcommerceLabel">Ecommerce Site</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start">
+                    <img src="./image/Ecommerce-site.jpg" class="img-fluid rounded mb-3" alt="Ecommerce site screenshot">
+                    <p><strong>Technologies utilisées :</strong> React, JavaScript, Bootstrap, MySQL</p>
+                    <p><strong>Durée :</strong> 2 mois</p>
+                    <p><strong>Description :</strong> Plateforme e-commerce moderne avec gestion des produits, panier, paiement sécurisé et interface administrateur. Responsive, rapide et optimisée pour l'expérience utilisateur.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="modal fade" id="modalPerso" tabindex="-1" aria-labelledby="modalPersoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPersoLabel">Web site Personnel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-start">
+                    <img src="./image/Untitled.jpg" class="img-fluid rounded mb-3" alt="Aperçu site personnel">
+                    <p><strong>Technologies utilisées :</strong> HTML, CSS, JavaScript, Spring Boot</p>
+                    <p><strong>Durée :</strong> 2 mois</p>
+                    <p><strong>Description :</strong> Portfolio personnel présentant les compétences, projets, contact et parcours. Design moderne, responsive, optimisé pour le référencement et l’accessibilité.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    
+
+        <section id="contact" class="contact-section py-5">
+            <div class="container">
+                <h1 class="text-center mb-5">Contact Me</h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form class="contact-form" id="contactForm" autocomplete="on" novalidate>
+                            <div class="form-group mb-3">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Your Name" required aria-required="true">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="Your Email" required aria-required="true">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" class="form-control" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <div id="formMessage" class="mt-3" style="disefay:none;"></div>
+                        </form>
+                        <script src="contact-google-sheets.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-3">
+            <div class="container">
+                <p>&copy; 2023 Fayssal Rajouani. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/fayssalrajouani" class="social-icon" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/faysal_rajouani/" class="social-icon" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/faysal-rajouani-3a6524373/" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/fayssalrajouani" class="social-icon" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>   
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      document.getElementById('intro-animation').style.opacity = 0;
+      setTimeout(function() {
+        document.getElementById('intro-animation').style.display = 'none';
+      }, 600);
+    }, 2200);
+  });
+</script>
+</body>
+</html>

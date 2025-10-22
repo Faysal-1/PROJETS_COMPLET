@@ -1,0 +1,20 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    padding-top: 100px; /* Pour éviter le chevauchement avec la barre de navigation */
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 50px;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Test</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1 style="text-align: center; background-color: burlywood;">Bootstrap</h1>
+    
+    <!-----------------------------------  bootstrap exercice-------------------------->
+    <div class="container">
+        <div class="row bg-dark p-1">
+            <div class="col-8"><button class="btn btn-primary">Butt</button></div>
+            <div class="col-1"><button class="btn btn-primary">Butt</button></div>
+            <div class="col-2 mx-2"><button class="btn btn-primary">Butt</button></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row bg-warning text-center">
+            <div class="col"><button class="btn btn-primary">Butt</button></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row bg-dark p-1">
+            <div class="col text-start"><button class="btn btn-primary">Butt</button></div>
+            <div class="col text-center"><button class="btn btn-primary">Butt</button></div>
+            <div class="col text-end"><button class="btn btn-primary">Butt</button></div>
+        </div>
+    </div>
+    
+    <!-----------------------------------  bootstrap card-------------------------->
+    <div class="card" style="width: 18rem; text-align: center; background-color: rgba(135, 222, 209, 0.361); margin-left: 35%; margin-top: 20px;">
+        <img src="img/carte.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    
+    <!-----------------------------------  les images -------------------------->
+    <div id="c1" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carte.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/téléchargement.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/carte.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#c1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: aqua;"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#c1"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: blue;" ></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+        <!-------------------- toggle button----------------------->
+   <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">dropdown list </button>
+        <!-------------------- list button----------------------->
+   <ul class="dropdown-menu">
+       <li><a class="dropdown-item" href="#">Action</a></li>
+       <li><a class="dropdown-item" href="#">Another action</a></li>
+       <li><a class="dropdown-item" href="#">Something else here</a></li>
+   </ul>
+
+   
+
+
+
+
+
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#home">Home</a></li>
+                <li class="breadcrumb-item"><a href="#about">About</a></li>
+                <li class="breadcrumb-item active"><a href="#contact">Contact</a></li>
+            </ul>
+
+            <section id="home">
+                <h1>Home</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quod.</p>
+            </section>
+
+            <section id="about">
+                <h1>About</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quod.</p>
+            </section>
+
+            <section id="contact">
+                <h1>Contact</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quod.</p>
+            </section>
+
+        </div>
+
+
+
+
+        <div class="container">
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Colllape button</button>
+            <div id="demo" class="collapse">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quod.</p>
+            </div>
+        
+        </div>
+
+
+
+
+        <div class="container">
+             <div class="form-group">
+                <label for="">Email adreess</label>
+                <input  class="form-control" type="text" placeholder="email adreess">
+                <small class="form-text text-muted">we will never share your email aitch anmy other person  </small>
+             </div>
+
+             <div class="from-group">
+                <label for="">Password</label>
+                <input class="form-control" type="password" placeholder="password">
+             </div>
+
+             <div class="from-check">
+                <label for="">check me out</label>
+                <input class="form-check-input" type="checkbox">
+             </div>
+              <button class="btn btn-success" type="submit">Submit</button>
+            </div>
+
+
+
+
+
+
+
+   
+   
+        <!-- Bootstrap JS Bundle -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
