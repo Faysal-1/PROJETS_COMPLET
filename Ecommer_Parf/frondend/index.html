@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Quartier d'Arômes - Parfums de Luxe au Maroc | Fès</title>
+    <meta name="description" content="Découvrez les parfums de luxe chez Quartier d'Arômes à Fès. Collections Homme, Femme et Mixte. Livraison gratuite. Produits authentiques 100% originaux.">
+    <meta name="keywords" content="parfums, luxe, Maroc, Fès, Dior, Chanel, parfumerie, eau de parfum">
+    <meta name="author" content="Quartier d'Arômes">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Quartier d'Arômes - Parfums de Luxe">
+    <meta property="og:description" content="Votre destination de parfums de luxe au Maroc">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quartiersdaromes.com">
+    <meta property="og:image" content="images/logo.png">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Quartier d'Arômes",
+        "description": "Boutique de parfums de luxe à Fès, Maroc",
+        "url": "https://quartiersdaromes.com",
+        "telephone": "+212708505157",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Fès",
+            "addressCountry": "MA"
+        },
+        "sameAs": [
+            "https://www.instagram.com/quartier_daromes/",
+            "https://www.facebook.com/quartiersdaromes"
+        ],
+        "priceRange": "$$",
+        "paymentAccepted": "Cash, WhatsApp"
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#5D4037">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Quartier d'Arômes">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home" aria-label="Quartier d'Arômes - Accueil">
+                <img src="images/logo.png" alt="Logo Quartier d'Arômes" class="navbar-logo me-2">
+                <span>Quartier d'Arômes</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" aria-label="Accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collection.html" aria-label="Produits">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wishlist.html" aria-label="Mes favoris">
+                            <i class="fas fa-heart me-1" aria-hidden="true"></i>Favoris
+                            <span class="badge bg-danger ms-1" id="wishlist-count" aria-label="Nombre de favoris">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-label="Mon panier">
+                            <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i>Panier
+                            <span class="badge bg-danger ms-1" id="cart-count" aria-label="Nombre d'articles">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold mb-4 animate-fade-in">Quartier d'Arômes</h1>
+                    <p class="lead mb-4 animate-fade-in-delay">Votre destination de parfums de luxe au Maroc</p>
+                    <div class="animate-fade-in-delay-2">
+                        <a href="collection.html" class="btn btn-hero btn-lg me-3">
+                            <i class="fas fa-shopping-bag me-2"></i>Découvrir nos parfums
+                        </a>
+                        <a href="https://wa.me/212708505157" target="_blank" class="btn btn-hero-outline btn-lg">
+                            <i class="fab fa-whatsapp me-2"></i>Contactez-nous
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="hero-image animate-float">
+                        <img src="images/logo.png" alt="Parfum" style="max-width: 400px; opacity: 0.3; filter: brightness(2);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section id="products" class="category-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">
+                <i class="fas fa-th-large me-2"></i>Nos Collections
+            </h2>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-star"></i>
+                    <span>Tous</span>
+                </button>
+                <button class="category-btn" data-category="homme">
+                    <i class="fas fa-male"></i>
+                    <span>Homme</span>
+                </button>
+                <button class="category-btn" data-category="femme">
+                    <i class="fas fa-female"></i>
+                    <span>Femme</span>
+                </button>
+                <button class="category-btn" data-category="mixte">
+                    <i class="fas fa-users"></i>
+                    <span>Mixte</span>
+                </button>
+                <button class="category-btn" data-category="nouveautes">
+                    <i class="fas fa-fire"></i>
+                    <span>Nouveautés</span>
+                </button>
+                <button class="category-btn" data-category="offres">
+                    <i class="fas fa-tag"></i>
+                    <span>Offres</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Carousel -->
+    <section class="products-carousel bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">
+                <i class="fas fa-star me-2"></i>Produits Vedettes
+            </h2>
+        </div>
+        <div class="products-carousel-track" id="carousel-track">
+            <!-- Carousel items will be loaded here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section class="instagram-feed-section py-5">
+        <div class="container-fluid px-0">
+            <div class="instagram-header text-center mb-5">
+                <h2 class="section-title">
+                    <i class="fab fa-instagram me-2"></i>Suivez-nous sur Instagram
+                </h2>
+                <a href="https://www.instagram.com/quartier_daromes/" target="_blank" class="instagram-handle">
+                    @quartier_daromes
+                </a>
+            </div>
+            
+            <!-- Carousel Instagram Horizontal -->
+            <div class="instagram-carousel-wrapper">
+                <button class="instagram-carousel-btn prev" id="instagram-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="instagram-carousel-container">
+                    <div class="instagram-carousel-track" id="instagram-carousel">
+                        <!-- Posts Instagram chargés ici -->
+                    </div>
+                </div>
+                
+                <button class="instagram-carousel-btn next" id="instagram-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="text-center mt-4">
+                <a href="https://www.instagram.com/quartier_daromes/" target="_blank" class="btn btn-instagram">
+                    <i class="fab fa-instagram me-2"></i>Voir plus sur Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cartOffcanvasLabel">
+                <i class="fas fa-shopping-cart me-2"></i>Mon Panier
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cart-items-offcanvas">
+                <div class="empty-cart text-center py-5">
+                    <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+                    <p class="text-muted">Votre panier est vide</p>
+                </div>
+            </div>
+            <div id="cart-footer" class="d-none">
+                <hr>
+                <div class="d-flex justify-content-between mb-3">
+                    <h5>Total:</h5>
+                    <h5 class="text-primary"><span id="cart-total">0.00</span> DH</h5>
+                </div>
+                <div class="d-grid gap-2">
+                    <a href="checkout.html" class="btn btn-primary">
+                        <i class="fas fa-check me-2"></i>Finaliser la Commande
+                    </a>
+                    <button class="btn btn-outline-danger" id="clear-cart">
+                        <i class="fas fa-trash me-2"></i>Vider le Panier
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="background: var(--gradient-dark); color: white;">
+                    <h5 class="modal-title" id="productDetailModalLabel">
+                        <i class="fas fa-flask me-2"></i>Détails du Produit
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 text-center mb-4 mb-md-0">
+                            <img id="detail-product-image" src="" alt="Product" class="img-fluid rounded shadow" style="max-height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="col-md-6">
+                            <span id="detail-product-category" class="badge mb-3" style="background: var(--gradient-primary); padding: 0.5rem 1rem; font-size: 0.85rem;"></span>
+                            <h3 id="detail-product-name" class="mb-3" style="color: var(--dark-color); font-weight: 700;"></h3>
+                            <p id="detail-product-description" class="text-muted mb-4" style="line-height: 1.6;"></p>
+                            
+                            <div class="mb-4">
+                                <h4 class="mb-2" style="background: var(--gradient-primary); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+                                    <span id="detail-product-price"></span> DH
+                                    <small id="detail-product-old-price" class="text-decoration-line-through text-muted ms-2 d-none"></small>
+                                </h4>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="detail-quantity" class="form-label fw-bold" style="color: var(--dark-color);">
+                                    <i class="fas fa-box me-2"></i>Quantité:
+                                </label>
+                                <div class="input-group" style="max-width: 150px;">
+                                    <button class="btn btn-outline-secondary" type="button" onclick="changeDetailQuantity(-1)">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input type="number" class="form-control text-center" id="detail-quantity" value="1" min="1" max="10">
+                                    <button class="btn btn-outline-secondary" type="button" onclick="changeDetailQuantity(1)">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-add-cart btn-lg" onclick="addToCartFromDetail()">
+                                    <i class="fas fa-cart-plus me-2"></i>Ajouter au Panier
+                                </button>
+                                <button class="btn btn-add-wishlist" onclick="addToWishlistFromDetail()">
+                                    <i class="fas fa-heart me-2"></i>Ajouter aux Favoris
+                                </button>
+                            </div>
+                            
+                            <div class="mt-4 p-3 rounded" style="background: linear-gradient(145deg, #fff8f0 0%, #fdfcfb 100%); border: 1px solid rgba(212, 175, 55, 0.2);">
+                                <p class="mb-2" style="color: var(--dark-color);"><i class="fas fa-shipping-fast me-2" style="color: #27AE60;"></i><strong>Livraison gratuite</strong></p>
+                                <p class="mb-2" style="color: var(--dark-color);"><i class="fas fa-shield-alt me-2" style="color: var(--primary-color);"></i>100% Authentique</p>
+                                <p class="mb-0" style="color: var(--dark-color);"><i class="fas fa-undo me-2" style="color: #DAA520;"></i>Retour sous 7 jours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="notification-toast" class="toast" role="alert">
+            <div class="toast-header">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <strong class="me-auto">Notification</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="images/logo.png" alt="Quartier d'Arômes" class="footer-logo mb-3">
+                    <h5>Quartier d'Arômes</h5>
+                    <p class="text-muted">Votre destination premium pour les parfums de luxe au Maroc.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/quartiersdaromes" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/quartier_daromes/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/212708505157" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="collection.html">Produits</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://www.instagram.com/quartier_daromes/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Fès, Maroc</li>
+                        <li><i class="fas fa-phone me-2"></i><a href="tel:+212708505157" class="text-white text-decoration-none">+212 708-505157</a></li>
+                        <li><i class="fas fa-envelope me-2"></i><a href="mailto:contact@quartiersdaromes.ma" class="text-white text-decoration-none">contact@quartiersdaromes.ma</a></li>
+                    </ul>
+                    <div class="mt-3">
+                        <small class="text-muted">Horaires: Lun-Sam 9h-20h</small>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Quartier d'Arômes. Tous droits réservés.</p>
+                <p class="mb-0 mt-2">
+                    <a href="mentions-legales.html" class="text-white text-decoration-none">Mentions Légales</a> | 
+                    <a href="sitemap.xml" class="text-white text-decoration-none">Plan du Site</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/212708505157" target="_blank" class="whatsapp-float" title="Contactez-nous sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner-content">
+            <i class="fas fa-flask fa-3x"></i>
+            <div class="spinner-text">Chargement...</div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Instagram Embed Script -->
+    <script async src="//www.instagram.com/embed.js"></script>
+    
+    <script>
+        // ===== BASE DE DONNÉES PRODUITS (INTÉGRÉE) =====
+        const products = [
+            {id: 1, name: "Dior Sauvage", description: "Parfum moderne et puissant, notes boisées et épicées", price: 890, oldPrice: null, category: "homme", tags: ["nouveautes"], image: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=500&h=500&fit=crop"},
+            {id: 2, name: "Bleu de Chanel", description: "Élégance intemporelle, notes boisées aromatiques", price: 920, oldPrice: null, category: "homme", tags: [], image: "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=500&h=500&fit=crop"},
+            {id: 3, name: "Giorgio Armani Acqua", description: "Fraîcheur méditerranéenne, notes aquatiques", price: 780, oldPrice: 950, category: "homme", tags: ["offres"], image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=500&h=500&fit=crop"},
+            {id: 4, name: "Paco Rabanne 1 Million", description: "Audacieux et séduisant, notes épicées et cuirées", price: 850, oldPrice: null, category: "homme", tags: [], image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=500&h=500&fit=crop"},
+            {id: 5, name: "Chanel N°5", description: "Icône intemporelle, notes florales aldéhydées", price: 950, oldPrice: null, category: "femme", tags: [], image: "https://images.unsplash.com/photo-1588405748880-12d1d2a59bd9?w=500&h=500&fit=crop"},
+            {id: 6, name: "Lancôme La Vie Est Belle", description: "Douceur gourmande, notes de praline et vanille", price: 820, oldPrice: null, category: "femme", tags: ["nouveautes"], image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=500&h=500&fit=crop"},
+            {id: 7, name: "Gucci Bloom", description: "Jardin fleuri, notes de jasmin et tubéreuse", price: 760, oldPrice: 920, category: "femme", tags: ["offres"], image: "https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=500&h=500&fit=crop"},
+            {id: 8, name: "YSL Black Opium", description: "Café noir et vanille, addiction pure", price: 880, oldPrice: null, category: "femme", tags: [], image: "https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=500&h=500&fit=crop"},
+            {id: 9, name: "Valentino Donna", description: "Élégance florale, notes de rose et iris", price: 790, oldPrice: null, category: "femme", tags: [], image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=500&h=500&fit=crop"},
+            {id: 10, name: "Tom Ford Oud Wood", description: "Bois précieux d'Orient, notes de oud et épices", price: 1200, oldPrice: null, category: "mixte", tags: ["nouveautes"], image: "https://images.unsplash.com/photo-1610969524113-bae462bb3892?w=500&h=500&fit=crop"},
+            {id: 11, name: "Byredo Gypsy Water", description: "Nomade et libre, notes boisées et vanille", price: 1100, oldPrice: null, category: "mixte", tags: [], image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=500&h=500&fit=crop"},
+            {id: 12, name: "Le Labo Santal 33", description: "Bois de santal et cardamome, signature unique", price: 1150, oldPrice: 1400, category: "mixte", tags: ["offres"], image: "https://images.unsplash.com/photo-1610969524113-bae462bb3892?w=500&h=500&fit=crop"},
+            {id: 13, name: "Hermès Terre d'Hermès", description: "Fraîcheur épicée et boisée, notes de pamplemousse", price: 980, oldPrice: null, category: "homme", tags: ["nouveautes"], image: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=500&h=500&fit=crop"},
+            {id: 14, name: "Viktor & Rolf Flowerbomb", description: "Explosion florale, notes de jasmin et orchidée", price: 840, oldPrice: 1050, category: "femme", tags: ["offres"], image: "https://images.unsplash.com/photo-1588405748880-12d1d2a59bd9?w=500&h=500&fit=crop"},
+            {id: 15, name: "Creed Aventus", description: "Sophistication masculine, notes d'ananas et bouleau", price: 1350, oldPrice: null, category: "homme", tags: [], image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=500&h=500&fit=crop"},
+            {id: 16, name: "Maison Francis Kurkdjian Baccarat Rouge 540", description: "Luxe absolu, notes ambrées et florales", price: 1480, oldPrice: null, category: "mixte", tags: ["nouveautes"], image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=500&h=500&fit=crop"},
+            {id: 17, name: "Dolce & Gabbana Light Blue", description: "Fraîcheur méditerranéenne, notes de citron et pomme", price: 720, oldPrice: 890, category: "femme", tags: ["offres"], image: "https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=500&h=500&fit=crop"}
+        ];
+        
+        // ===== CAROUSEL PRODUITS VEDETTES =====
+        function renderFeaturedCarousel() {
+            const track = document.getElementById('carousel-track');
+            if (!track) return;
+            
+            // Filtrer les produits vedettes
+            const featured = products.filter(p => p.tags.includes('nouveautes') || p.tags.includes('offres'));
+            const allFeatured = [...featured, ...featured]; // Dupliquer pour animation infinie
+            
+            allFeatured.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'carousel-product-card';
+                
+                const badge = product.tags.includes('offres') ? 
+                    '<span class="product-badge">PROMO</span>' : 
+                    (product.tags.includes('nouveautes') ? '<span class="product-badge new">NOUVEAU</span>' : '');
+                
+                const priceHTML = product.oldPrice ?
+                    `${product.price} DH <span class="product-old-price">${product.oldPrice} DH</span>` :
+                    `${product.price} DH`;
+                
+                card.innerHTML = `
+                    <div class="product-card">
+                        ${badge}
+                        <img src="${product.image}" alt="${product.name}" class="product-image">
+                        <div class="product-body">
+                            <div class="product-category">${product.category.toUpperCase()}</div>
+                            <h3 class="product-name">${product.name}</h3>
+                            <p class="product-description">${product.description}</p>
+                            <div class="product-price">${priceHTML}</div>
+                            <button class="btn btn-add-cart" onclick="addToCart(${product.id})">
+                                <i class="fas fa-cart-plus me-2"></i>Ajouter au Panier
+                            </button>
+                        </div>
+                    </div>
+                `;
+                track.appendChild(card);
+            });
+            
+            console.log('✅ Carousel Vedettes: ' + featured.length + ' produits');
+        }
+        
+        // ===== CAROUSEL INSTAGRAM HORIZONTAL =====
+        const instagramPostUrls = [
+            'https://www.instagram.com/p/DGqmcQ1MFXS/',
+            'https://www.instagram.com/p/DFONcdXCo75/',
+            'https://www.instagram.com/p/DDaidshCmuC/',
+            'https://www.instagram.com/p/DDfjrfuCehe/',
+            'https://www.instagram.com/p/DC83o-ouThA/',
+            'https://www.instagram.com/p/DC7pj6VNseW/',
+            'https://www.instagram.com/p/DC4-N7vuEcS/',
+            'https://www.instagram.com/p/DCzylWmOBJ7/'        
+        ];
+        
+        let currentSlide = 0;
+        
+        function loadInstagramCarousel() {
+            const track = document.getElementById('instagram-carousel');
+            if (!track) return;
+            
+            track.innerHTML = '';
+            
+            instagramPostUrls.forEach(url => {
+                const slide = document.createElement('div');
+                slide.className = 'instagram-carousel-slide';
+                
+                slide.innerHTML = `
+                    <blockquote class="instagram-media" 
+                        data-instgrm-permalink="${url}" 
+                        data-instgrm-version="14" 
+                        style="background:#FFF; border:0; border-radius:16px; box-shadow:0 8px 30px rgba(0,0,0,0.12); margin:0; max-width:400px; min-width:326px; padding:0; width:100%;">
+                        <a href="${url}" target="_blank" style="background:#FFFFFF; padding:20px; text-decoration:none; display:block; color:#333;">
+                            <div style="text-align:center;">
+                                <i class="fab fa-instagram" style="font-size:2rem; color:#E1306C; margin-bottom:10px;"></i>
+                                <p style="margin:0;">Chargement du post Instagram...</p>
+                            </div>
+                        </a>
+                    </blockquote>
+                `;
+                
+                track.appendChild(slide);
+            });
+            
+            // Recharger les embeds Instagram
+            setTimeout(() => {
+                if (window.instgrm) {
+                    window.instgrm.Embeds.process();
+                }
+            }, 100);
+            
+            console.log('✅ Carousel Instagram: ' + instagramPostUrls.length + ' posts chargés');
+        }
+        
+        function moveCarousel(direction) {
+            const container = document.querySelector('.instagram-carousel-container');
+            const track = document.getElementById('instagram-carousel');
+            const slideWidth = 420; // 400px + 20px gap
+            
+            // Scroll de 420px (une carte) à la fois
+            const scrollAmount = slideWidth * direction;
+            
+            // Utiliser scrollBy pour un défilement fluide
+            if (container) {
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        // ===== GESTION DU PANIER ET WISHLIST =====
+        let cart = JSON.parse(localStorage.getItem('cart')) || {};
+        let wishlist = JSON.parse(localStorage.getItem('wishlist')) || {};
+        
+        // ===== Update Wishlist Count =====
+        function updateWishlistCount() {
+            const wishlistCount = document.getElementById('wishlist-count');
+            const count = Object.keys(wishlist).length;
+            if (wishlistCount) {
+                wishlistCount.textContent = count;
+            }
+        }
+        
+        function addToCart(productId, quantity = 1) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+            
+            if (cart[productId]) {
+                cart[productId] += quantity;
+            } else {
+                cart[productId] = quantity;
+            }
+            
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartUI();
+            showNotification(`${product.name} ajouté au panier !`, 'success');
+        }
+        
+        function updateCartUI() {
+            const cartCount = document.getElementById('cart-count');
+            const cartItems = document.getElementById('cart-items-offcanvas');
+            const cartTotal = document.getElementById('cart-total');
+            const cartFooter = document.getElementById('cart-footer');
+            
+            // Mettre à jour le compteur
+            const totalItems = Object.values(cart).reduce((sum, qty) => sum + qty, 0);
+            if (cartCount) cartCount.textContent = totalItems;
+            
+            // Afficher les produits dans le panier
+            if (cartItems) {
+                if (Object.keys(cart).length === 0) {
+                    cartItems.innerHTML = '<div class="text-center py-5 text-muted"><i class="fas fa-shopping-cart fa-3x mb-3"></i><p>Votre panier est vide</p></div>';
+                    if (cartFooter) cartFooter.classList.add('d-none');
+                } else {
+                    if (cartFooter) cartFooter.classList.remove('d-none');
+                    let total = 0;
+                    cartItems.innerHTML = '';
+                    
+                    Object.keys(cart).forEach(productId => {
+                        const product = products.find(p => p.id == productId);
+                        const qty = cart[productId];
+                        const subtotal = product.price * qty;
+                        total += subtotal;
+                        
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'cart-item mb-3 p-3 border rounded';
+                        itemDiv.innerHTML = `
+                            <div class="d-flex align-items-center">
+                                <img src="${product.image}" alt="${product.name}" style="width:60px; height:60px; object-fit:cover; border-radius:8px;" class="me-3">
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">${product.name}</h6>
+                                    <small class="text-muted">${qty} × ${product.price} DH</small>
+                                </div>
+                                <div class="text-end">
+                                    <div class="fw-bold text-primary">${subtotal} DH</div>
+                                    <button class="btn btn-sm btn-danger mt-1" onclick="removeFromCart(${productId})">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        `;
+                        cartItems.appendChild(itemDiv);
+                    });
+                    
+                    if (cartTotal) cartTotal.textContent = total.toFixed(2);
+                }
+            }
+        }
+        
+        function removeFromCart(productId) {
+            delete cart[productId];
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartUI();
+            showNotification('Produit retiré du panier', 'info');
+        }
+        
+        function clearCart() {
+            if (confirm('Voulez-vous vraiment vider le panier ?')) {
+                cart = {};
+                localStorage.setItem('cart', JSON.stringify(cart));
+                updateCartUI();
+                showNotification('Panier vidé', 'success');
+            }
+        }
+        
+        function showNotification(message, type = 'info') {
+            // Créer une notification Bootstrap Toast
+            const toastContainer = document.createElement('div');
+            toastContainer.className = 'position-fixed bottom-0 end-0 p-3';
+            toastContainer.style.zIndex = '9999';
+            
+            const bgColor = type === 'success' ? 'bg-success' : type === 'danger' ? 'bg-danger' : 'bg-info';
+            
+            toastContainer.innerHTML = `
+                <div class="toast show" role="alert">
+                    <div class="toast-header ${bgColor} text-white">
+                        <i class="fas fa-${type === 'success' ? 'check-circle' : 'info-circle'} me-2"></i>
+                        <strong class="me-auto">Notification</strong>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+                    </div>
+                    <div class="toast-body">${message}</div>
+                </div>
+            `;
+            
+            document.body.appendChild(toastContainer);
+            
+            setTimeout(() => {
+                toastContainer.remove();
+            }, 3000);
+        }
+        
+        // ===== GESTION DES FILTRES DE CATÉGORIES =====
+        function setupCategoryFilters() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Retirer la classe active de tous les boutons
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    // Ajouter la classe active au bouton cliqué
+                    this.classList.add('active');
+                    
+                    const category = this.dataset.category;
+                    
+                    // Rediriger vers la page collection avec le filtre
+                    window.location.href = `collection.html?category=${category}`;
+                });
+            });
+        }
+        
+        // ===== INITIALISATION =====
+        document.addEventListener('DOMContentLoaded', function() {
+            // Charger le carousel Produits Vedettes
+            renderFeaturedCarousel();
+            
+            // Charger le carousel Instagram
+            loadInstagramCarousel();
+            
+            // Initialiser le panier et wishlist
+            updateCartUI();
+            updateWishlistCount();
+            
+            // Configurer les filtres de catégories
+            setupCategoryFilters();
+            
+            // Bouton vider le panier
+            const clearCartBtn = document.getElementById('clear-cart');
+            if (clearCartBtn) {
+                clearCartBtn.addEventListener('click', clearCart);
+            }
+            
+            // Boutons de navigation Instagram
+            const prevBtn = document.getElementById('instagram-prev');
+            const nextBtn = document.getElementById('instagram-next');
+            
+            if (prevBtn) prevBtn.addEventListener('click', () => moveCarousel(-1));
+            if (nextBtn) nextBtn.addEventListener('click', () => moveCarousel(1));
+            
+            console.log('✅ Tous les systèmes initialisés (carousels, panier, filtres, wishlist)');
+        });
+    </script>
+    
+    <!-- Scripts globaux -->
+    <script src="js/global.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products-data.js"></script>
+</body>
+</html>

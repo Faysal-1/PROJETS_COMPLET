@@ -1,0 +1,29 @@
+{
+  "name": "Quartier d'Arômes - Parfums de Luxe",
+  "short_name": "Quartier d'Arômes",
+  "description": "Boutique de parfums de luxe à Fès, Maroc",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F5F5DC",
+  "theme_color": "#5D4037",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "../images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "lifestyle"],
+  "lang": "fr-MA",
+  "dir": "ltr",
+  "scope": "./",
+  "screenshots": []
+}

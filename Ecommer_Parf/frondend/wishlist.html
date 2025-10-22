@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Favoris - Quartier d'Arômes </title>
+    <meta name="description" content="Consultez vos parfums favoris chez Quartier d'Arômes. Sauvegardez et achetez vos fragrances préférées.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Quartier d'Arômes - Accueil">
+                <img src="images/logo.png" alt="Logo Quartier d'Arômes" class="navbar-logo me-2">
+                <span>Quartier d'Arômes</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" aria-label="Accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collection.html" aria-label="Produits">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="wishlist.html" aria-label="Mes favoris">
+                            <i class="fas fa-heart me-1" aria-hidden="true"></i>Favoris
+                            <span class="badge bg-danger ms-1" id="wishlist-count" aria-label="Nombre de favoris">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-label="Mon panier">
+                            <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i>Panier
+                            <span class="badge bg-danger ms-1" id="cart-count" aria-label="Nombre d'articles">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Wishlist Page Content -->
+    <section class="wishlist-page">
+        <div class="container py-5">
+            <h1 class="page-title text-center mb-5">
+                <i class="fas fa-heart me-3"></i>Mes Favoris
+            </h1>
+            
+            <div id="wishlist-content">
+                <div class="empty-wishlist text-center py-5">
+                    <i class="fas fa-heart fa-5x text-muted mb-4"></i>
+                    <h3 class="text-muted">Aucun favori pour le moment</h3>
+                    <p class="text-muted mb-4">Ajoutez des produits à vos favoris depuis la page d'accueil</p>
+                    <a href="collection.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-shopping-bag me-2"></i>Découvrir nos produits
+                    </a>
+                </div>
+            </div>
+
+            <div id="wishlist-grid" class="row g-4 d-none">
+                <!-- Wishlist items will be loaded here -->
+            </div>
+
+            <div id="wishlist-actions" class="text-center mt-5 d-none">
+                <button class="btn btn-primary btn-lg me-3" id="add-all-to-cart-btn">
+                    <i class="fas fa-cart-plus me-2"></i>Tout Ajouter au Panier
+                </button>
+                <button class="btn btn-outline-danger btn-lg" id="clear-wishlist-btn">
+                    <i class="fas fa-trash me-2"></i>Vider les Favoris
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cartOffcanvasLabel">
+                <i class="fas fa-shopping-cart me-2"></i>Mon Panier
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cart-items-offcanvas">
+                <div class="empty-cart text-center py-5">
+                    <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+                    <p class="text-muted">Votre panier est vide</p>
+                </div>
+            </div>
+            <div id="cart-footer" class="d-none">
+                <hr>
+                <div class="d-flex justify-content-between mb-3">
+                    <h5>Total:</h5>
+                    <h5 class="text-primary"><span id="cart-total">0.00</span> DH</h5>
+                </div>
+                <div class="d-grid gap-2">
+                    <a href="checkout.html" class="btn btn-primary">
+                        <i class="fas fa-check me-2"></i>Finaliser la Commande
+                    </a>
+                    <button class="btn btn-outline-danger" id="clear-cart">
+                        <i class="fas fa-trash me-2"></i>Vider le Panier
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5><i class="fas fa-gem me-2"></i>Quartier d'Arômes</h5>
+                    <p class="text-muted">Votre destination premium pour les parfums de luxe au Maroc.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="collection.html">Produits</a></li>
+                        <li><a href="wishlist.html">Favoris</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Fès, Maroc</li>
+                        <li><i class="fas fa-envelope me-2"></i>contact@quartiersdaromes.ma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/products-data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/wishlist.js"></script>
+    
+    <script>
+        // Initialiser le panier sur wishlist.html
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof loadCartFromLocalStorage === 'function') {
+                loadCartFromLocalStorage();
+            }
+            if (typeof updateCartUI === 'function') {
+                updateCartUI();
+            }
+            
+            // Bouton vider le panier
+            const clearCartBtn = document.getElementById('clear-cart');
+            if (clearCartBtn && typeof clearCart === 'function') {
+                clearCartBtn.addEventListener('click', clearCart);
+            }
+        });
+    </script>
+</body>
+</html>

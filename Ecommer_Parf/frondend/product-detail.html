@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Produit - Quartier d'Arômes</title>
+    <meta name="description" content="Découvrez tous les détails de ce parfum de luxe chez Quartier d'Arômes.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" aria-label="Quartier d'Arômes - Accueil">
+                <img src="images/logo.png" alt="Logo Quartier d'Arômes" class="navbar-logo me-2">
+                <span>Quartier d'Arômes</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" aria-label="Accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collection.html" aria-label="Produits">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wishlist.html" aria-label="Mes favoris">
+                            <i class="fas fa-heart me-1" aria-hidden="true"></i>Favoris
+                            <span class="badge bg-danger ms-1" id="wishlist-count" aria-label="Nombre de favoris">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-label="Mon panier">
+                            <i class="fas fa-shopping-cart me-1" aria-hidden="true"></i>Panier
+                            <span class="badge bg-danger ms-1" id="cart-count" aria-label="Nombre d'articles">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-page" style="min-height: 80vh; padding: 4rem 0; background: linear-gradient(135deg, #FFF8F0 0%, #FDFCFB 100%);">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb" style="margin-bottom: 2rem;">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" style="color: var(--primary-color); text-decoration: none;">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="collection.html" style="color: var(--primary-color); text-decoration: none;">Produits</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" id="breadcrumb-product">Détails</li>
+                </ol>
+            </nav>
+
+            <div class="row g-5">
+                <!-- Product Image -->
+                <div class="col-lg-6">
+                    <div style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid rgba(212, 175, 55, 0.1); position: sticky; top: 100px;">
+                        <div id="product-badge-container"></div>
+                        <img id="product-image" src="" alt="Product" class="img-fluid rounded" style="width: 100%; height: auto; max-height: 600px; object-fit: cover; border-radius: 15px; margin-bottom: 1.5rem;">
+                        
+                        <!-- Trust Badges -->
+                        <div class="row text-center g-2 mt-3">
+                            <div class="col-4">
+                                <div style="padding: 1rem; background: linear-gradient(145deg, #fff8f0 0%, #fdfcfb 100%); border-radius: 10px;">
+                                    <i class="fas fa-shipping-fast fa-2x mb-2" style="color: #27AE60;"></i>
+                                    <p class="mb-0" style="font-size: 0.8rem; font-weight: 600; color: var(--dark-color);">Livraison<br>Gratuite</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div style="padding: 1rem; background: linear-gradient(145deg, #fff8f0 0%, #fdfcfb 100%); border-radius: 10px;">
+                                    <i class="fas fa-shield-alt fa-2x mb-2" style="color: var(--primary-color);"></i>
+                                    <p class="mb-0" style="font-size: 0.8rem; font-weight: 600; color: var(--dark-color);">100%<br>Authentique</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div style="padding: 1rem; background: linear-gradient(145deg, #fff8f0 0%, #fdfcfb 100%); border-radius: 10px;">
+                                    <i class="fas fa-undo fa-2x mb-2" style="color: #DAA520;"></i>
+                                    <p class="mb-0" style="font-size: 0.8rem; font-weight: 600; color: var(--dark-color);">Retour<br>7 jours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="col-lg-6">
+                    <div style="background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border: 1px solid rgba(212, 175, 55, 0.1);">
+                        <span id="product-category" class="badge mb-3" style="background: var(--gradient-primary); padding: 0.6rem 1.5rem; font-size: 0.9rem;"></span>
+                        
+                        <h1 id="product-name" style="color: var(--dark-color); font-weight: 800; font-size: 2.5rem; margin-bottom: 1.5rem; line-height: 1.2;"></h1>
+                        
+                        <div class="mb-4">
+                            <h2 class="mb-2" style="background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 2.5rem; font-weight: 800;">
+                                <span id="product-price"></span> DH
+                                <small id="product-old-price" class="text-decoration-line-through text-muted ms-2 d-none" style="font-size: 1.5rem;"></small>
+                            </h2>
+                            <p class="text-success mb-0"><i class="fas fa-check-circle me-2"></i>En stock</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h4 style="color: var(--dark-color); font-weight: 700; margin-bottom: 1rem;">
+                                <i class="fas fa-info-circle me-2"></i>Description
+                            </h4>
+                            <p id="product-description" style="color: #6b7280; font-size: 1.1rem; line-height: 1.8;"></p>
+                        </div>
+
+                        <hr style="border-color: rgba(62, 39, 35, 0.1); margin: 2rem 0;">
+
+                        <!-- Quantity Selector -->
+                        <div class="mb-4">
+                            <label class="form-label" style="color: var(--dark-color); font-weight: 700; font-size: 1.1rem;">
+                                <i class="fas fa-box me-2"></i>Quantité:
+                            </label>
+                            <div class="input-group" style="max-width: 180px;">
+                                <button class="btn btn-outline-secondary" type="button" onclick="changeQuantity(-1)" style="border: 1.5px solid rgba(62, 39, 35, 0.2); border-radius: 10px 0 0 10px; padding: 0.8rem 1.2rem;">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="10" style="border: 1.5px solid rgba(62, 39, 35, 0.2); border-left: none; border-right: none; font-weight: 700; font-size: 1.2rem;">
+                                <button class="btn btn-outline-secondary" type="button" onclick="changeQuantity(1)" style="border: 1.5px solid rgba(62, 39, 35, 0.2); border-radius: 0 10px 10px 0; padding: 0.8rem 1.2rem;">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="d-grid gap-3">
+                            <button class="btn btn-add-cart btn-lg" onclick="addToCartFromPage()" style="padding: 1.2rem; font-size: 1.2rem;">
+                                <i class="fas fa-cart-plus me-2"></i>Ajouter au Panier
+                            </button>
+                            <button class="btn btn-add-wishlist btn-lg" onclick="addToWishlistFromPage()" style="padding: 1.2rem; font-size: 1.1rem;">
+                                <i class="fas fa-heart me-2"></i>Ajouter aux Favoris
+                            </button>
+                            <a href="checkout.html" class="btn btn-lg" style="background: linear-gradient(135deg, #27AE60, #229954); color: white; padding: 1.2rem; border-radius: 10px; font-weight: 600; text-decoration: none; text-align: center;">
+                                <i class="fas fa-bolt me-2"></i>Acheter Maintenant
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="mt-5">
+                <h3 style="color: var(--dark-color); font-weight: 800; margin-bottom: 2rem; text-align: center;">
+                    <i class="fas fa-star me-2" style="color: #DAA520;"></i>Produits Similaires
+                </h3>
+                <div class="row g-4" id="related-products">
+                    <!-- Related products will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="images/logo.png" alt="Quartier d'Arômes" class="footer-logo mb-3">
+                    <h5>Quartier d'Arômes</h5>
+                    <p class="text-muted">Votre destination premium pour les parfums de luxe au Maroc.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/quartiersdaromes" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/quartier_daromes/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/212708505157" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="collection.html">Produits</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Fès, Maroc</li>
+                        <li><i class="fas fa-phone me-2"></i><a href="tel:+212708505157" class="text-white text-decoration-none">+212 708-505157</a></li>
+                        <li><i class="fas fa-envelope me-2"></i><a href="mailto:contact@quartiersdaromes.ma" class="text-white text-decoration-none">contact@quartiersdaromes.ma</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Quartier d'Arômes. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><i class="fas fa-shopping-cart me-2"></i>Mon Panier</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cart-items-offcanvas"></div>
+            <div id="cart-footer" class="mt-auto">
+                <hr>
+                <div class="d-flex justify-content-between mb-3">
+                    <strong>Total:</strong>
+                    <strong id="cart-total">0.00</strong> DH
+                </div>
+                <div class="d-grid gap-2">
+                    <a href="checkout.html" class="btn btn-primary">
+                        <i class="fas fa-check me-2"></i>Finaliser la Commande
+                    </a>
+                    <button class="btn btn-outline-danger" id="clear-cart">
+                        <i class="fas fa-trash me-2"></i>Vider le Panier
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="notification-toast" class="toast" role="alert">
+            <div class="toast-header">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <strong class="me-auto">Notification</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/products-data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+</html>

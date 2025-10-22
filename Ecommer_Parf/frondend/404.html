@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Non Trouvée - Quartier d'Arômes</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #A67C52 0%, #C9A86A 50%, #E6C99F 100%);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .error-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #D4AF37, #DAA520);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        
+        .error-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #3E2723;
+            margin-bottom: 1rem;
+        }
+        
+        .error-message {
+            color: #6b7280;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .error-icon {
+            font-size: 5rem;
+            color: #D4AF37;
+            margin-bottom: 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-content">
+            <div class="error-icon">
+                <i class="fas fa-flask"></i>
+            </div>
+            <div class="error-code">404</div>
+            <h1 class="error-title">Page Non Trouvée</h1>
+            <p class="error-message">
+                Désolé, le parfum que vous cherchez n'existe pas ou a été déplacé.
+                Retournons à notre collection de fragrances.
+            </p>
+            <div class="d-grid gap-2">
+                <a href="index.html" class="btn btn-lg" style="background: linear-gradient(135deg, #D4AF37, #DAA520); color: #3E2723; font-weight: 700; border-radius: 50px;">
+                    <i class="fas fa-home me-2"></i>Retour à l'Accueil
+                </a>
+                <a href="collection.html" class="btn btn-outline-secondary btn-lg" style="border-radius: 50px;">
+                    <i class="fas fa-shopping-bag me-2"></i>Voir nos Parfums
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
